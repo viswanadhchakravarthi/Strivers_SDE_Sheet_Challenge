@@ -28,3 +28,15 @@ void setZeros(vector<vector<int>> &matrix)
             for(int j=0;j<n;j++) matrix[0][j]=0;
         }
 }
+Solution 1: Using brute force
+Intuition: O(N * M) for traversing through each element and (N+M)for traversing to row and column of elements having value 0.
+Time Complexity:O((N * M) * (N + M)). 
+Space Complexity:O(1)
+	
+Solution 2: Better approach
+Intuition: Instead of traversing through each row and column, we can use dummy arrays to check if the particular row or column has an element 0 or not, which will improve the time complexity.
+
+Solution 3: Optimizing the better approach.
+Intuition: Instead of taking two dummy arrays we can use the first row and column of the matrix for the same work. This will help to reduce the space complexity of the problem.
+Time Complexity: O(2 * (N * M)), as we are traversing two times in a matrix,
+Space Complexity: O(1).
