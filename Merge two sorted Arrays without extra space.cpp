@@ -1,6 +1,6 @@
 int nextGap(int gap)
     {
-        if(gap==1)   // base condition should be return bcz (1/2)+(1%2) == 1.
+        if(gap==1)   // base condition should be return bcz (1/2)+(1%2) == 1
             return 0;
         return (gap/2)+(gap%2);
     }
