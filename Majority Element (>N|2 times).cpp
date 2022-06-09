@@ -1,6 +1,6 @@
 #include <bits/stdc++.h> 
 int findMajorityElement(int nums[], int n) {
-	int count=0, maj;
+    int count=0, maj;
     for(int i=0; i<n ; i++){
         // we are assuming the starting element as Maj , if count is 0
         if(count==0){
@@ -15,7 +15,13 @@ int findMajorityElement(int nums[], int n) {
             // Balancing the count of majority elements with Other elements.
         }
     }
-    return maj;
+    count = 0;
+    for(int i=0;i<n;i++)
+        if(nums[i]==maj)
+            count++;
+    if(count>n/2)
+        return maj;
+    return -1;
 }
 // Time Complexity: O(n) Space Complexity : O(1)
 // ******** Moore's Voting Algorithm *********
