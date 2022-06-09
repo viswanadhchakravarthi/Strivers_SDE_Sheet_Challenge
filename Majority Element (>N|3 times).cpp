@@ -27,8 +27,8 @@ vector<int> majorityElementII(vector<int> &nums)
         }
         vector<int> ans;
         int base_count= nums.size()/3;
-        if(c1>base_count && c1!=0) ans.push_back(ele1);
-        if(c2>base_count && c2!=0) ans.push_back(ele2);
+        if(c1>base_count) ans.push_back(ele1);
+        if(c2>base_count) ans.push_back(ele2);
         
         return ans;
 
