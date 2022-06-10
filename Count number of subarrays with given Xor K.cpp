@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 int subarraysXor(vector<int> &arr, int x)
 {
-	map<int,int> mp;
+    map<int,int> mp;
     int xorr=0;
     int count=0;
     for(int i=0 ; i<arr.size() ; i++) // O(n)
