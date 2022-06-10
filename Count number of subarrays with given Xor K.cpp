@@ -7,11 +7,11 @@ int subarraysXor(vector<int> &arr, int x)
     for(int i=0 ; i<arr.size() ; i++) // O(n)
     {
     	xorr = xorr ^ arr[i];
-		if( xorr == x ) 
-			count++;
-		int y = xorr ^ x;
-		if(mp.find(y)!=mp.end()) // O(log(n))
-        	count += mp[y];
+	if( xorr == x ) 
+		count++;
+	int y = xorr ^ x;
+	if(mp.find(y)!=mp.end()) // O(log(n))
+		count += mp[y];
         mp[xorr]++;	// O(logn)
     }
  	return count;
