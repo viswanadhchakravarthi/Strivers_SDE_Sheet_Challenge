@@ -14,4 +14,9 @@ bool detectCycle(Node *head)
         }
         return false;
 }
+
 // time: O(n), space: O(1)
+
+
+
+
