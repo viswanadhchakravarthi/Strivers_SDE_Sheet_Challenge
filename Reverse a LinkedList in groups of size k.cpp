@@ -66,3 +66,4 @@ Node *getListAfterReverseOperation(Node *head, int n, int b[])
     }
     return head;
 }
+// Time Complex: O( (n/k)*k ) = O(n) & Space: O(1)
