@@ -38,3 +38,8 @@ Node *firstNode(Node *head)
         }
         return NULL;
 }
+// Time Complexity: O(N)
+// Reason: We can take overall iterations club it to O(N)
+
+// Space Complexity: O(1)
+// Reason: No extra data structure is used.
