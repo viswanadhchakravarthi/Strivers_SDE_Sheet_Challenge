@@ -32,4 +32,4 @@ vector<vector<int>> findTriplets(vector<int> nums, int n, int K) {
     }
     return ans;
 }
-// Time: O(n^2) , Space: O(1)
+// Time: O(n^2)+O(nlogn) , Space: O(1)
