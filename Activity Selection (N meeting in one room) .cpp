@@ -9,9 +9,6 @@
 vector<int> maximumMeetings(vector<int> &start, vector<int> &end) {
     vector<pair<pair<int,int>,int>> v;
     int n = start.size();
-    vector<int> res;
-    //if(n==39553)
-        
     for(int i=0;i<n;i++)
         v.push_back({{start[i],end[i]},i+1});
     //sort(v.begin(),v.end(),sortBySecond);
@@ -28,6 +25,7 @@ vector<int> maximumMeetings(vector<int> &start, vector<int> &end) {
          });
     int curr_time = -1;
     //int count=0;
+    vector<int> res;        
     for(int j=0;j<v.size();j++)
     {
         if(v[j].first.first > curr_time)
