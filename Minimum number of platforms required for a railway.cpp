@@ -1,5 +1,8 @@
 //Function to find the minimum number of platforms required at the
-//railway station such that no train waits.
+//railway station such that no train waits. -
+        
+        --> solve like chocolate distribution problem    
+
 int calculateMinPatforms(int arr[], int dep[], int n) {
     // Pairs cannot be together. Thats the problem. Just think yourself as a station master, 
         // and you just care how many came and how many went. Not when one came and when went
