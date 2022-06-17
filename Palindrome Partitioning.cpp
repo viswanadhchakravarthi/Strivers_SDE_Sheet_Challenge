@@ -21,7 +21,7 @@ void palin_Partition(string &s,int ind,vector<vector<string>> &res,vector<string
     {
         if(isPalindrome(s,ind,i))
         {
-            ds.push_back(s.substr(ind,i-ind+1));
+            ds.push_back(s.substr(ind,i-ind+1)); // obj.substr( start_ind, len_of_str_req );
             palin_Partition(s,i+1,res,ds);
             ds.pop_back();
         }
