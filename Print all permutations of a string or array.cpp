@@ -1,5 +1,5 @@
 #include<algorithm>
-void generatePermutations(string s,int i,vector<string> &res)
+void generatePermutations(string &s, int i, vector<string> &res)
 {
     if(i==s.size())
     {
@@ -8,11 +8,10 @@ void generatePermutations(string s,int i,vector<string> &res)
     }
     for(int j=i; j<s.size(); j++)
     {
-        string tmp=s;
-        swap(tmp[i],tmp[j]);
-        generatePermutations(tmp,i+1,res);
+        swap(s[i],s[j]);
+        generatePermutations(s,i+1,res);
+        swap(s[i],s[j]);
     }
-    return;
 }
 vector<string> findPermutations(string &s) {
     vector<string> res;
