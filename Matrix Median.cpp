@@ -16,7 +16,7 @@ int upper_bound(vector<int> &row, int mid)
 }
 int getMedian(vector<vector<int>> &matrix)
 {
-    int low = 0, high = 1e9;
+    int low = 0, high = 1e9;  // 1e9 = 10^9 , this is choosen bcz matrix contains only within integer range
     int n = matrix.size(), m = matrix[0].size();
     while(low<=high)
     {
