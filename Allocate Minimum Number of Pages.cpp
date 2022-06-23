@@ -22,7 +22,10 @@ bool isPossible(int n, int m, vector<int> time, long long int mid)
 }
 long long ayushGivesNinjatest(int n, int m, vector<int> time) 
 {    
-    // Write your code here.
+    // Your task is to find out the minimal value of the 
+    // maximum amount of time for which Ayush studies in a day, 
+    // in order to complete all the 'M=time.size()' chapters in no more than 'N' days.
+    
     long long start = 0;
     long long totalTime = 0;
     for(int i=0; i<m; i++)
