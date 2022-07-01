@@ -22,3 +22,4 @@ vector<int> findSpans(vector<int> &price) {
     }
     return res;
 }
+// Same as Next Greater than element , but do the same from right to left of given array
