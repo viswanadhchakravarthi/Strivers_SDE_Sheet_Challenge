@@ -41,7 +41,7 @@ int widthOfBinaryTree(TreeNode* root)
                 TreeNode* node = q.front().first;
                 curr_ind = q.front().second-start_ind;
                 q.pop();
-                if(node->left)
+                if(node->left)    // Tricky part here , below
                     q.push({node->left,curr_ind*2+1});
                 if(node->right)
                     q.push({node->right,curr_ind*2+2});
