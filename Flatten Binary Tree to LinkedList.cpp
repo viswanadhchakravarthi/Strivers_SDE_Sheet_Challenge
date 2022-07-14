@@ -1,3 +1,25 @@
+class using_morris_traversal // time: O(N) , Space: O(1) ==> most optimal solution
+{
+  public:
+      TreeNode<int> *flattenBinaryTree(TreeNode<int> *root)
+      {
+          TreeNode<int> *curr = root;
+          while(curr)
+          {
+              if(curr->left)
+              {
+                  TreeNode<int> *prev = curr->left;
+                  while(prev->right)
+                      prev = prev->right;
+                  prev->right = curr->right;
+                  curr ->right = curr->left;
+              }
+              curr = curr->right;
+          }
+          return root;
+      }
+};
+
 class Recursive // Time: O(N) & Space: O(N)
 {
   public:
@@ -18,6 +40,8 @@ class Recursive // Time: O(N) & Space: O(N)
           return prev;
       }
 };
+
+// Recursive & Iterative appraoches are quite different
 
 class Iterative // Time: O(N) , Space: O(N)
 {
