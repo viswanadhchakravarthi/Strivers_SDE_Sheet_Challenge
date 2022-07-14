@@ -11,7 +11,7 @@ void changeTree(BinaryTreeNode < int > * root) { // Time: O(N) , Space:O(N)
         if(root->left) root->left->data = root->data;
         if(root->right) root->right->data = root->data;
     }
-    else{ // This part can be ignored
+    else{ // Anyhow when we backTrack summation of child's data is stored in curr->val. So, this part can be ignored
         root->data = sum;
     }
     changeTree(root->left);
