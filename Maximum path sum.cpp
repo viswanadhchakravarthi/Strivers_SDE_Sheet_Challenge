@@ -37,8 +37,8 @@ class LeetCode
 //           /  \
 //          -5   -7
     // if question is path not asked for only b/w leaves then below add l = max(0,1) & r = max(0,r)
-    int l = max(0,path(root->left,ans,nof_leafs)); 
-    int r = max(0,path(root->right,ans,nof_leafs));
+    int l = max(0,path(root->left,ans)); 
+    int r = max(0,path(root->right,ans));
     ans = max(ans, l+r+root->val);
     return root->val + max(l,r);
 }
