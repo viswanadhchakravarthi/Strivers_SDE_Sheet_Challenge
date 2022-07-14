@@ -1,4 +1,4 @@
-class Recursive
+class Recursive // Time: O(N) & Space: O(N)
 {
   void flatten(TreeNode<int> *root,TreeNode<int>* &prev)
   {
