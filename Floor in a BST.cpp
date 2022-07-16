@@ -1,7 +1,7 @@
 class Iterative
 {
   public:
-    int floorInBST(TreeNode<int> * root, int x)
+    int floorInBST(TreeNode<int> * root, int x) // time: O(H)
     {
         int floor = -1;
         while(root!=NULL)
