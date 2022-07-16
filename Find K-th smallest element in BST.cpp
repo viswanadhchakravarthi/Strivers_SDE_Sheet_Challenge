@@ -12,7 +12,7 @@ void inOrder(TreeNode<int> *root,int &k,int &ans)
 }
 int kthSmallest(TreeNode<int> *root, int k)
 {
-    int ans=0;
+    int ans=-1;
     inOrder(root,k,ans);
     return ans;
 }
