@@ -33,3 +33,4 @@ int detectCycleInDirectedGraph(int N, vector < pair < int, int >> & edges) {
     else
         return 1;   
 }
+ 
