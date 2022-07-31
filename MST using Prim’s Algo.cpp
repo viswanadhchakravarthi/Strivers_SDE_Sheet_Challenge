@@ -40,5 +40,5 @@ vector<pair<pair<int, int>, int>> calculatePrimsMST(int n, int m, vector<pair<pa
     }
     return res;
 }
-Time: O( E log V + V log V ) 
-space: O( V )
+// Time: O( E log V + V log V ) 
+// space: O( V )
