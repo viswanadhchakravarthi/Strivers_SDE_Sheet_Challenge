@@ -54,3 +54,5 @@ int maxXOR(int n, int m, vector<int> &arr1, vector<int> &arr2)
         maxi = max( maxi, trie.findMax(it2));
     return maxi;
 }
+
+// Time : O( Q*32 + N*32 )
