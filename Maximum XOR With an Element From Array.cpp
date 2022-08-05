@@ -70,3 +70,4 @@ vector<int> maxXorQueries(vector<int> &arr, vector<vector<int>> &queries){
     return res;
 }
 
+// Time : O( Q*32 + N*32 )
