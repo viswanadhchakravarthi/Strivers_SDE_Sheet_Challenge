@@ -46,5 +46,5 @@ vector<int> minHeap(int n, vector<vector<int>>& q) {
     }
     
     return ans;
-    
+     
 }
